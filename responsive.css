@@ -1,0 +1,71 @@
+/* ============ TruKey — Responsive for ALL devices (responsive.css) ============ */
+@media(max-width:1100px){
+  .nav-links{gap:16px}
+  .s-grid{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:992px){
+  .nav-links{position:fixed;top:0;right:-330px;width:300px;max-width:85vw;height:100dvh;background:#111;color:#fff;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:70px 26px 26px;gap:2px;transition:right .32s cubic-bezier(.2,.8,.2,1);z-index:1100;overflow-y:auto}
+  .nav-links.open{right:0;box-shadow:-20px 0 60px rgba(0,0,0,.4)}
+  .nav-links a{color:#fff;font-size:15px;padding:13px 0;border-bottom:1px solid #2a2a2e;width:100%}
+  .nav-links a::after{display:none}
+  .hamburger{display:flex;align-items:center;justify-content:center}
+  .nav-cta .txt{display:none}
+  .close-menu{position:absolute;top:16px;right:16px;background:var(--yellow);border:none;width:38px;height:38px;border-radius:10px;font-size:18px;cursor:pointer;display:block!important;color:#111;font-weight:800}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-right{min-height:300px;order:-1}
+  .hero-right img{position:relative;height:300px}
+  .hero-right::after{background:linear-gradient(180deg,transparent 60%,#0b0b0c 100%)}
+  .hero-stats{position:relative}
+  .about-grid,.why-grid,.area-grid,.quote-grid{grid-template-columns:1fr}
+  .price-grid{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto}
+  .steps{grid-template-columns:1fr 1fr}
+  .why-cards{grid-template-columns:1fr 1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  body{font-size:15px}
+  .topbar .container{justify-content:center;text-align:center}
+  .topbar .addr{display:none}
+  .emergency-strip{font-size:11.5px;letter-spacing:.3px;padding:9px 0}
+  .marquee-group{gap:.8rem 1.2rem;padding:0 12px}
+  .section{padding:50px 0}
+  .s-grid,.blog-grid{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto}
+  .img-small{margin-left:0;margin-top:0;height:220px}
+  .about-imgs{grid-template-columns:1fr 1fr}
+  .img-main{height:320px}
+  .exp-badge{position:relative;left:0;bottom:0;margin-top:12px;grid-column:1/-1;justify-content:center}
+  .checks{grid-template-columns:1fr}
+  .t-card{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .cta .container{flex-direction:column;text-align:center;justify-content:center}
+  .team-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:576px){
+  .container{padding:0 15px}
+  .emergency-strip{font-size:11px}
+  .marquee-group{gap:.6rem .9rem}
+  .nav-cta .btn{padding:11px 16px;font-size:12px;min-height:44px}
+  .hero-left{padding:30px 15px}
+  .hero-btns .btn{flex:1;min-width:140px}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .hstat{padding:13px 14px}
+  .form-row{grid-template-columns:1fr}
+  .steps,.why-cards,.counters,.f-grid,.team-grid{grid-template-columns:1fr}
+  .member img{height:200px}
+  .price-table{font-size:13px;min-width:560px}
+  .floats a{width:50px;height:50px}
+  .about-imgs{grid-template-columns:1fr}
+  .img-main{height:280px}
+}
+/* Tiny phones */
+@media(max-width:380px){
+  .hero h1{font-size:27px}
+  .hero-points span{font-size:11.5px}
+  .wcard{flex-direction:column}
+  .top-social{display:none}
+}
+/* Large desktop */
+@media(min-width:1400px){
+  .container{max-width:1280px}
+  .hero h1{font-size:58px}
+}
